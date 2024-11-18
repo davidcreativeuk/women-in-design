@@ -1,3 +1,6 @@
+/* Add fonts from google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
 /* CSS reset */
 * {
     padding: 0;
@@ -20,8 +23,6 @@ body {
     margin: 0 auto 0 auto;
 }
 
-/* Add fonts from google fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 /* Default styling for Headings */
 h1,
@@ -39,6 +40,7 @@ h6 {
 h1 {
     font-size: 4.25rem;
     margin-bottom: 2rem;
+    font-weight: 900;
 }
 
 h2 {
@@ -164,7 +166,6 @@ footer {
 }
 
 /* one off styles */
-
 .colour-block{
  padding:3rem 0 3rem 0;
  background-color:#CBD7DF;
