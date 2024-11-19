@@ -1,2 +1,5 @@
-# women-in-design
-[women in design](https://www.github.io/women-in-design/women-CSS.html)
+# UXD101 HTML demonstration
+## women-in-design
+
+This project will show students how to use HTML to build web pages and CSS to style them.
+
