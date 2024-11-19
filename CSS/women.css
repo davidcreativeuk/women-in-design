@@ -10,6 +10,26 @@
     line-height: 1em;
 }
 
+/*css grids*/
+.grid {
+    display: flex;
+    gap:24px;
+}
+@media only screen and (width< 600px) {
+    .grid{
+        display: block;
+    }
+}
+
+.grid-third {
+    flex-basis: 33.33%;
+    background-color: #CBD7DF;
+}
+.grid-twoThirds {
+    flex-basis: 66.66%;
+    background-color: aquamarine;
+}
+
 /*default styles for whole page*/
 body {
     color:#101010;
@@ -21,6 +41,18 @@ body {
 .container {
     max-width: 1020px;
     margin: 0 auto 0 auto;
+}
+
+@media only screen and (width< 1085px) {
+    .container {
+        margin: 0 32px 0 32px;
+    }
+}
+
+@media only screen and (width< 600px) {
+    .container {
+        margin: 0 16px 0 16px;
+    }  
 }
 
 /* Default styling for Headings */
