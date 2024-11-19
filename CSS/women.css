@@ -101,6 +101,11 @@ a:visited {
     color:#6935d2;
 }
 
+/* alternative link style when added to colour background*/
+.colour-block a, .colour-block a:hover, .colour-block a:visited {
+    color:#101010;
+}
+
 /* images*/
 img {
     max-width: 1020px;
