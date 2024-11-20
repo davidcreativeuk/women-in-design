@@ -20,14 +20,21 @@
         display: block;
     }
 }
-
+ /* CSS grids column widths */
 .grid-third {
     flex-basis: 33.33%;
-    background-color: #CBD7DF;
 }
 .grid-twoThirds {
     flex-basis: 66.66%;
-    background-color: aquamarine;
+}
+.grid-quarter {
+    flex-basis: 25%;
+}
+.grid-half {
+    flex-basis: 50%;
+}
+.grid-threeQuarters {
+    flex-basis: 75%;
 }
 
 /*default styles for whole page*/
