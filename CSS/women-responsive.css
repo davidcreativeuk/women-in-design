@@ -1,13 +1,33 @@
-/* Add fonts from google fonts*/
+/*import fonts from Google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
-/* CSS reset */
+/* css reset */
+
 * {
-    padding: 0;
+    padding : 0;
     margin: 0;
     font-size: 100%;
     line-height: 1em;
-    
+}
+
+/*css grids*/
+.grid {
+    display: flex;
+    gap:24px;
+}
+@media only screen and (width< 600px) {
+    .grid{
+        display: block;
+    }
+}
+
+.grid-third {
+    flex-basis: 33.33%;
+    background-color: #CBD7DF;
+}
+.grid-twoThirds {
+    flex-basis: 66.66%;
+    background-color: aquamarine;
 }
 
 /*default styles for whole page*/
@@ -23,19 +43,24 @@ body {
     margin: 0 auto 0 auto;
 }
 
+@media only screen and (width< 1085px) {
+    .container {
+        margin: 0 32px 0 32px;
+    }
+}
+
+@media only screen and (width< 600px) {
+    .container {
+        margin: 0 16px 0 16px;
+    }  
+}
 
 /* Default styling for Headings */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
     font-family: "Playfair Display", Georgia, 'Times New Roman', Times, serif;
     line-height: 1.1;
     font-weight: 700;
 }
-
 /*specific styles*/
 h1 {
     font-size: 4.25rem;
@@ -48,6 +73,7 @@ h2 {
     margin-bottom: .5rem;
 }
 
+
 h3 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
@@ -57,7 +83,6 @@ h4 {
     font-size: 1.75rem;
     margin-bottom: 0.5rem;
 }
-
 
 /* Paragraphs */
 p {
@@ -79,14 +104,11 @@ p.large {
     margin-bottom: 2.5rem;
 }
 
-/*lists*/
 ul {
     list-style: disc outside;
     margin-bottom: 1.5rem;
-    margin-left: 1.25rem;
-    
+    margin-left: 1.25rem; 
 }
-
 ul li {
     font-family: "Source Sans 3", Arial, Helvetica, sans-serif;
     font-weight: 400;
@@ -97,18 +119,23 @@ ul li {
 
 /* hyperlinks */
 a {
-   font-family:inherit;
-   font-size:inherit;
-   line-height: inherit;
-   color: #006bc3;
-}
+    font-family:inherit;
+    font-size:inherit;
+    line-height: inherit;
+    color: #006bc3;
+ }
 
-a:hover {
-color:#00447B;
+ a:hover {
+    color:#00447B;
 }
 
 a:visited {
     color:#6935d2;
+}
+
+/* alternative link style when added to colour background*/
+.colour-block a, .colour-block a:hover, .colour-block a:visited {
+    color:#101010;
 }
 
 /* images*/
@@ -139,7 +166,16 @@ figure.quote figcaption p{
     font-weight:700;
 }
 
-/*landmarks*/
+/* landmarks */
+footer {
+    padding: 1.5rem 0 1.5rem 0;
+    margin-top:2rem;
+    border-top:1px solid #101010;
+}
+
+main{
+    margin-bottom: 2.5rem;
+}
 
 header{
     border-bottom:2px solid #101010;
@@ -153,26 +189,18 @@ header p.logo{
     line-height: 1.1;
 }
 
-main{
-    margin-bottom: 2.5rem;
-}
-nav{
-    margin-bottom: 2rem;
-}
-footer {
-    padding: 1.5rem 0 1.5rem 0;
-    margin-top:2rem;
-    border-top:1px solid #101010;
-}
-
-/* one off styles */
+/* additional styles and components */
 .colour-block{
- padding:3rem 0 3rem 0;
- background-color:#CBD7DF;
- margin-bottom:2.5rem;
-}
+    padding:3rem 0 3rem 0;
+    background-color:#CBD7DF;
+    margin-bottom:2.5rem;
+   }
 
-.highlight {
+   .highlight {
     background-color: #D8415C;
     padding:0 0.5rem;
 }
+
+
+
+
