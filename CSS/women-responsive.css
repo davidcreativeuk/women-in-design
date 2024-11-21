@@ -14,10 +14,11 @@
 .grid {
     display: flex;
     gap:24px;
+    flex-direction: row;
 }
 @media only screen and (width< 600px) {
     .grid{
-        display: block;
+        flex-direction: column;
     }
 }
  /* CSS grids column widths */
