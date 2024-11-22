@@ -42,7 +42,7 @@ body {
     margin: 0 auto 0 auto;
 }
 
-@media only screen and (width< 1085px) {
+/* @media only screen and (width< 1085px) {
     .container {
         margin: 0 32px 0 32px;
     }
@@ -52,7 +52,7 @@ body {
     .container {
         margin: 0 16px 0 16px;
     }  
-}
+} */
 
 /* Default styling for Headings */
 h1,h2,h3,h4,h5,h6 {
