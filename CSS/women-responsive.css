@@ -1,4 +1,4 @@
-/*import fonts from Google fonts*/
+/* /*import fonts from Google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 /* css reset */
@@ -16,11 +16,6 @@
     gap:24px;
     flex-direction: row;
 }
-/* @media only screen and (width< 600px) {
-    .grid{
-        flex-direction: column;
-    }
-} */
  /* CSS grids column widths */
 .grid-col-third {
     flex-basis: 33.33%;
@@ -42,18 +37,6 @@ body {
     margin: 0 auto 0 auto;
 }
 
-/* @media only screen and (width< 1085px) {
-    .container {
-        margin: 0 32px 0 32px;
-    }
-}
-
-@media only screen and (width< 600px) {
-    .container {
-        margin: 0 16px 0 16px;
-    }  
-} */
-
 /* Default styling for Headings */
 h1,h2,h3,h4,h5,h6 {
     font-family: "Playfair Display", Georgia, 'Times New Roman', Times, serif;
@@ -69,7 +52,7 @@ h1 {
 
 h2 {
     font-size: 2.25rem;
-    margin-bottom: .5rem;
+    margin-bottom:0.5rem;
 }
 
 
@@ -200,6 +183,56 @@ header p.logo{
     padding:0 0.5rem;
 }
 
+/* media queries */
+@media only screen and (max-width:1068px) {
+    .container {
+        margin: 0 24px 0 24px;
+    }
+}
 
+@media only screen and (max-width: 768px) {
+    .grid {
+        flex-direction: column;
+    }
+}
 
-
+@media only screen and (max-width: 600px) {
+    .container {
+        margin: 0 16px 0 16px;
+    } 
+    h1{
+        font-size: 2.25rem;
+        margin-bottom: 1rem;
+    } 
+    h2{
+        font-size: 1.875rem;
+    } 
+    h3{
+        font-size: 1.5rem;
+    } 
+    h4{
+        font-size: 1.25rem;
+    } 
+    p.large {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+    }
+    p{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    ul {
+        margin-bottom: 1rem;
+    }
+    ul li {
+        font-size: 1rem;
+        margin-bottom: .5rem;
+    }
+    header p.logo{
+        font-size:1.25rem;
+    }
+    .colour-block{
+        padding:2rem 0;
+        margin-bottom:2rem;
+    }
+}
