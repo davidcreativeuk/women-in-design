@@ -16,26 +16,17 @@
     gap:24px;
     flex-direction: row;
 }
-@media only screen and (width< 600px) {
+/* @media only screen and (width< 600px) {
     .grid{
         flex-direction: column;
     }
-}
+} */
  /* CSS grids column widths */
-.grid-third {
+.grid-col-third {
     flex-basis: 33.33%;
 }
-.grid-twoThirds {
+.grid-col-twoThirds {
     flex-basis: 66.66%;
-}
-.grid-quarter {
-    flex-basis: 25%;
-}
-.grid-half {
-    flex-basis: 50%;
-}
-.grid-threeQuarters {
-    flex-basis: 75%;
 }
 
 /*default styles for whole page*/
