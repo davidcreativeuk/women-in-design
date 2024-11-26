@@ -1,4 +1,4 @@
-/*import fonts from Google fonts*/
+/* /*import fonts from Google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 /* css reset */
@@ -100,11 +100,6 @@ a:visited {
     color:#6935d2;
 }
 
-/* alternative link style when added to colour background*/
-.colour-block a, .colour-block a:hover, .colour-block a:visited {
-    color:#101010;
-}
-
 /* images*/
 img {
     max-width: 1020px;
@@ -168,9 +163,7 @@ header p.logo{
     padding:0 0.5rem;
 }
 
-
-
-
-
-
-
+/* alternative link style when added to colour background*/
+.colour-block a, .colour-block a:hover, .colour-block a:visited {
+    color:#101010;
+}
