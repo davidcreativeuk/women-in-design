@@ -10,22 +10,6 @@
     line-height: 1em;
 }
 
-/*css grids*/
-.grid {
-    display: flex;
-    gap:24px;
-    flex-direction: row;
-}
- /* CSS grids column widths */
- .grid-col-third {
-    flex-basis: 33.33%;
-}
-.grid-col-twoThirds {
-    flex-basis: 66.66%;
-}
-
-
-
 /*default styles for whole page*/
 body {
     color:#101010;
@@ -184,21 +168,6 @@ header p.logo{
     padding:0 0.5rem;
 }
 
-/* media queries */
-@media only screen and (max-width:1068px) {
-    .container {
-        margin: 0 24px 0 24px;
-    }
-}
-@media only screen and (max-width: 768px) {
-
-}
-
-@media only screen and (max-width: 600px) {
-    .container {
-        margin: 0 16px 0 16px;
-    }  
-}
 
 
 
